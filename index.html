@@ -28,17 +28,22 @@
             crossorigin="anonymous"
         ></script>
         <style>
-            body{background-color: rgb(254, 255, 255);}
+            body{background:linear-gradient(to left,rgb(64, 60, 60), rgb(148, 141, 141),rgb(54, 52, 52));
+            }
             .btn{width:100px;}
+            .btn0:hover{background-color: blue;}
+            .btn1:hover{background-color: rgb(203, 131, 229);}
+            .btn2:hover{background-color: rgb(255, 255, 98);}
+            .btn-3:hover{background-color: rgb(255, 0, 0);}
            
 
              
         </style>
     </head>
 
-    <body>
+    <body>-
        <div class=" d-flex justify-content-center align-items-center" style="height:100vh; box-shadow: 5px 10px 15px rgb(255, 242, 242);">
-          <table class="table w-25 table-primary border border-3 shadow">
+          <table class="table w-25 table-primary border border-5 shadow">
             <tr>
                 <th colspan="4">
                      My Simple Calculator
@@ -49,68 +54,68 @@
                     <input type="text" value="0" id="inp" class="form-control">
                 </th>
                 <td>
-                    <button class="btn btn-primary" onclick="backSpace()" ><-</button>
+                    <button class="btn btn-primary btn0" onclick="backSpace()" ><-</button>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button class="btn btn-dark" onclick="btnClicked(event)">1</button>
+                    <button class="btn btn1 btn-dark" onclick="btnClicked(event)">1</button>
                 </td>
                 <td>
-                    <button class="btn btn-dark"  onclick="btnClicked(event)">2</button>
+                    <button class="btn btn1 btn-dark"  onclick="btnClicked(event)">2</button>
                 </td>
                 <td>
-                    <button class="btn btn-dark" onclick="btnClicked(event)">3</button>
+                    <button class="btn  btn1 btn-dark" onclick="btnClicked(event)">3</button>
                 </td>
                 <td>
-                    <button class="btn btn-warning" onclick="btnClicked(event)">+</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="btn btn-dark" onclick="btnClicked(event)">4</button>
-                </td>
-                <td>
-                    <button class="btn btn-dark" onclick="btnClicked(event)">5</button>
-                </td>
-                <td>
-                    <button class="btn btn-dark" onclick="btnClicked(event)">6</button>
-                </td>
-                <td>
-                    <button class="btn btn-warning" onclick="btnClicked(event)">-</button>
+                    <button class="btn btn-warning btn2" onclick="btnClicked(event)">+</button>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button class="btn btn-dark" onclick="btnClicked(event)">7</button>
+                    <button class=" btn  btn1 btn-dark" onclick="btnClicked(event)">4</button>
                 </td>
                 <td>
-                    <button class="btn btn-dark" onclick="btnClicked(event)">8</button>
+                    <button class="btn   btn1 btn-dark" onclick="btnClicked(event)">5</button>
                 </td>
                 <td>
-                    <button class="btn btn-dark" onclick="btnClicked(event)">9</button>
+                    <button class="btn  btn1 btn-dark" onclick="btnClicked(event)">6</button>
                 </td>
                 <td>
-                    <button class="btn btn-warning" onclick="btnClicked(event)">/</button>
+                    <button class="btn btn-warning  btn2" onclick="btnClicked(event)">-</button>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button class="btn btn-dark" onclick="btnClicked(event)">0</button>
+                    <button class="btn  btn1 btn-dark" onclick="btnClicked(event)">7</button>
                 </td>
                 <td>
-                    <button class="btn btn-dark" onclick="btnClicked(event)">.</button>
+                    <button class="btn  btn1 btn-dark" onclick="btnClicked(event)">8</button>
                 </td>
                 <td>
-                    <button class="btn btn-dark"  onclick="getResult()">=</button>
+                    <button class="btn  btn1 btn-dark" onclick="btnClicked(event)">9</button>
                 </td>
                 <td>
-                    <button class="btn btn-warning" onclick="btnClicked(event)">*</button>
+                    <button class="btn btn-warning  btn2" onclick="btnClicked(event)">/</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn  btn1 btn-dark" onclick="btnClicked(event)">0</button>
+                </td>
+                <td>
+                    <button class="btn btn-dark btn1" onclick="btnClicked(event)">.</button>
+                </td>
+                <td>
+                    <button class="btn  btn1 btn-dark"  onclick="getResult()">=</button>
+                </td>
+                <td>
+                    <button class="btn  btn1 btn-warning  btn2" onclick="btnClicked(event)">*</button>
                 </td>
             </tr>
             <tr>
                 <td colspan="4">
-                    <button class="btn btn-danger" onclick="clearAll()"> clear</button>
+                    <button class="btn btn-danger btn-3" onclick="clearAll()"> clear</button>
                 </td>
             </tr>
           </table>

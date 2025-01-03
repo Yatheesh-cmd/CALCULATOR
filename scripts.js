@@ -1,6 +1,6 @@
 const btnClicked=(e)=>{
     console.log(e.target.innerText)
-    console.log("hello all")
+    // console.log("hello all")
     inp.value+=e.target.innerText
 }
 
